@@ -1,0 +1,457 @@
+@font-face {
+    font-family: "neue-haas-grotesk-medium";
+    src: url(../fonts/Neue-Haas-Grotesk/NHaasGroteskTXPro-65Md.ttf);
+}
+@font-face {
+    font-family: "ITC-Avant-Garde-Gothic-PRO-book";
+    src: url(../fonts/ITC-Avant-Garde-Gothic-PRO/ITC\ Avant\ Garde\ Gothic\ Pro-Book.otf);
+}
+/* Global css */
+.theme-btn{
+    padding: 18px 90px;
+    background: radial-gradient(at top left, #F8994F91 0%, #00000E00 100%);
+    font-family: "neue-haas-grotesk-medium";
+    border-radius: 12px;
+    font-size: 20px;
+    border-style: solid;
+    border-color: #F8994F45;
+    border-width: 0px 2px 2px 0px;
+    box-shadow: 0px 0px 24px -10px rgba(248, 153, 79, 0.5);
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    transition: all .5s;
+}
+.theme-btn:hover{
+    border-color: #F8994F;
+    transform: translateY(-8px);
+}
+.theme-btn-2{
+    padding: 18px 90px;
+    background: radial-gradient(at top left, #7CC4F347 0%, #FFFFFF00 100%);
+    font-family: "neue-haas-grotesk-medium";
+    border-radius: 12px;
+    font-size: 20px;
+    border-style: solid;
+    border-color: #7CC4F336;
+    border-width: 0px 2px 2px 0px;
+    box-shadow: 0px 0px 24px -10px rgba(124, 196, 243, 0.2);
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    transition: all .5s;
+}
+.theme-btn-2:hover{
+    border-color: #7CC4F3;
+    transform: translateY(-8px);
+}
+.section-heading{
+    color: white;
+    background: linear-gradient(to right, #A5A5A5, #FFFFFF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 76px;
+    font-family: "neue-haas-grotesk-medium";
+}
+.pill-heading{
+    font-family: "ITC-Avant-Garde-Gothic-PRO-book", Sans-serif;
+    color: #F8994F;
+    font-size: 18px;
+    font-weight: 300;
+    fill: #F8994F;
+    color: #F8994F;
+    background-color: #FFFFFF00;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: #F8994F57;
+    border-radius: 2000px 2000px 2000px 2000px;
+    box-shadow: 0px 0px 10px 0px rgba(248, 152.99999999999994, 79.00000000000004, 0.45);
+    padding: 16px 30px 16px 30px;
+    display: inline-block;
+    line-height: 1;
+}
+.section-description{
+    font-size: 18px;
+    color: #F5F5F5DE;
+    font-family: "ITC-Avant-Garde-Gothic-PRO-book", Sans-serif;
+}
+@media (max-width:991px){
+    .section-heading{
+        font-size: 30px;
+    }
+    .section-description{
+        font-size: 16px;
+    }
+    .pill-heading{
+        font-size: 14px;
+    }
+    .theme-btn{
+        font-size: 16px;
+        padding: 15px 40px;
+    }
+    .theme-btn-2{
+        font-size: 16px;
+        padding: 15px 40px;
+    }
+}
+/* Global css end*/
+/* Hero Section */
+.hero-section{
+    position: relative;
+}
+.hero-section::before{
+    content: "";
+    display: block;
+    position: absolute;
+    opacity: 1;
+    transition: all .3s;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    background-image: linear-gradient(180deg, #050C21BF 0%, #00000E 100%);
+}
+.video-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.video-container::before{
+    content: "";
+    display: block;
+    position: absolute;
+    mix-blend-mode: initial;
+    opacity: 1;
+    transition: all .3s;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    background-image: linear-gradient(180deg, #050C21BF 0%, #00000E 100%);
+    z-index: 1;
+}
+.hero-bg-video{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.header{
+    padding: 30px 0 65px 0;
+    position: relative;
+    z-index: 2;
+}
+.logo{
+    height: 80px;
+}
+.hero-title{
+    position: relative;
+    isolation: isolate;
+}
+.hero-title h1{
+    color: white;
+    background: linear-gradient(to right, #A5A5A5, #FFFFFF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 90px;
+    text-align: center;
+    font-family: "neue-haas-grotesk-medium";
+}
+.rechteck{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    width: 350px;
+    z-index: -1;
+}
+.hero-section .container{
+    position: relative;
+    z-index: 2;
+}
+.hero-description{
+    width: 100%;
+    max-width: 850px;
+    margin: 30px auto;
+}
+.hero-description p{
+    font-family: "ITC-Avant-Garde-Gothic-PRO-book";
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.65;
+    
+}
+
+.logos-slider{
+    width: 100%;
+    max-width: 80%;
+    margin: auto;
+    margin-top: 60px;
+}
+@media (min-width: 1400px) {
+    .hero-section .container {
+        max-width: 1140px;
+    }
+}
+@media (max-width: 991px) {
+    .hero-title h1{
+        font-size: 40px;
+    }
+    .rechteck{
+        width: 150px;
+    }
+    .logo{
+        height: 60px;
+    }
+    .hero-description p{
+        font-size: 16px;
+    }
+}
+/* Hero Section End*/
+
+/* reserve section */
+.reserve-section{
+    padding-top: 110px;
+    padding-bottom: 110px;
+    background: #00000E;
+}
+.reserve-section .section-heading{
+    max-width: 900px;
+    margin: auto;
+    margin-top: 30px;
+}
+.reserve-card{
+    background: #00000E;
+    min-height: 295px;
+    border-color: #7CC4F326;
+    border-radius: 20px;
+    border-width: 1px;
+    padding: 40px;
+    border-style: solid;
+    position: relative;
+    isolation: isolate;
+    color: white;
+    transition: all .5s;
+    height: 100%;
+}
+.reserve-card:hover{
+    transform: translateY(-10px);
+}
+.reserve-card::before{
+    content: "";
+    display: block;
+    position: absolute;
+    mix-blend-mode: initial;
+    opacity: 0.06;
+    border-radius: 20px;
+    transition: all .3s;
+    top: 1px;
+    left: 1px;
+    right: 1px;
+    bottom: 1px;
+    background-color: transparent;
+    background-image: radial-gradient(at top left, #7CC4F3 34%, #00000E 100%);
+    z-index: -1;
+}
+.reserve-section .section-description{
+    max-width: 680px;
+    margin: 30px auto;
+    margin-bottom: 40px;
+}
+.reserve-icon{
+    width: 67px;
+    aspect-ratio: 1;
+    border-radius: 50px;
+    background: #7CC4F31F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+.reserve-icon svg,
+.reserve-icon img{
+    width: 50%;
+    fill: #7CC4F3;
+}
+.reserve-card h4{
+    font-size: 30px;
+    font-family: "neue-haas-grotesk-medium";
+}
+.reserve-card p{
+    color: #FFFFFFBA;
+    font-family: "ITC-Avant-Garde-Gothic-PRO-book";
+}
+.reserve-cards{
+    margin-bottom: 50px;
+}
+@media (min-width: 1400px) {
+    .reserve-section .container {
+        max-width: 1140px;
+    }
+}
+@media (max-width: 991px) {
+    .reserve-card h4{
+        font-size: 25px;
+    }
+}
+/* reserve section end*/
+/* skills section */
+.skills-section{
+    background: #00000E;
+    padding: 100px 0;
+    position: relative;
+    isolation: isolate;
+}
+.skills-section::before{
+    content: "";
+    display: block;
+    position: absolute;
+    opacity: 0.14;
+    transition: all .3s;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    background-image: radial-gradient(at bottom left, #7CC4F3 0%, #050C21 42%);
+    z-index: -1;
+    /* border-bottom: 1px solid #7CC4F32E; */
+}
+.skills-section .section-heading{
+    max-width: 970px;
+    margin: auto;
+}
+.skills-section .section-description{
+    max-width: 900px;
+    margin: 20px auto;
+}
+.skills-imgs{
+    position: relative;
+}
+.skill-icons{
+    width: 8%;
+    position: absolute;
+}
+.skill-icon-m{
+    top: 20%;
+    left: 10%;
+}
+.skill-icon-ae{
+    top: 45%;
+    left: 25%;
+    width: 9%;
+}
+.skill-icon-pr{
+    top: 45%;
+    right: 25%;
+    width: 9%;
+}
+.skill-icon-ps{
+    top: 20%;
+    right: 10%;
+}
+.reel-container{
+    background-image: url(../img/reel-container-back.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    padding: 60px 0;
+    max-width: 1180px;
+    margin: auto;
+    border-radius: 0 0 30px 30px;
+    padding-right: 30px;
+}
+.reel-video{
+    border-radius: 20px;
+    width: 100%;
+    object-fit: cover;
+    width: 70%;
+    margin: auto;
+    display: block;
+}
+.reel-container .section-heading{
+    font-size: 60px;
+    margin-top: 20px;
+}
+.reel-container .section-description{
+    font-size: 16px;
+}
+@media (max-width: 991px){
+    .reel-container{
+        padding: 30px;
+    }
+    .reel-video{
+        width: 100%;
+    }
+    .reel-container .section-heading{
+        font-size: 30px;
+    }
+}
+/* skills section end*/
+/* movment section */
+.movement-section{
+    background-color: #00000E;
+    position: relative;
+    isolation: isolate;
+    padding: 110px;
+}
+.movement-section::before{
+    content: "";
+    display: block;
+    position: absolute;
+    opacity: 0.12;
+    transition: all .3s;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    background-image: radial-gradient(at center center, #7CC4F3 0%, #00000E 100%);
+    z-index: -1;
+}
+.movement-section .sub-heading{
+    font-size: 30px;
+    margin-top: 30px;
+}
+.movement-video-box-1{
+    position: relative;
+    isolation: isolate;
+}
+.movement-video-1{
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+    border: 1px solid #FFFFFF29;
+}
+.movement-video-box-1::before{
+    
+    content: "";
+    display: block;
+    position: absolute;
+    opacity: 0.12;
+    transition: all .3s;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    border: 1px solid #FFFFFF29;
+    background-color: #000000;
+    z-index: 1;
+}
+@media (min-width: 1400px) {
+    .movement-section .container {
+        max-width: 1125px;
+    }
+}
+/* movment section end*/
