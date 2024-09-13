@@ -758,6 +758,9 @@
     font-family: "ITC-Avant-Garde-Gothic-PRO-book";
     letter-spacing: 1.5px;
 }
+.points i{
+    color: #F8994F;
+}
 @media (min-width: 1400px) {
     .tabs-section .container {
         max-width: 1250px;
@@ -810,6 +813,11 @@
     border: 1px solid #7CC4F387;
     margin-bottom: 20px;
 }
+.testimonail-box-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 .user-profile-container{
     display: flex;
     align-items: center;
@@ -836,6 +844,15 @@
     color: #FFFFFF70;
     font-family: "ITC-Avant-Garde-Gothic-PRO-book";
 }
+.stars{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    column-gap: 2px;
+}
+.stars i{
+    color: #7CC4F3;
+}
 .testimonial-text{
     color: white;
     margin-top: 20px;
@@ -853,3 +870,300 @@
     }
 }
 /* testimonial section end*/
+/* plans section */
+.plans-section{
+    padding: 110px 0;
+    background-image: url(../img/back-2.png);
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    isolation: isolate;
+}
+.plans-section::before{
+    content: "";
+    display: block;
+    position: absolute;
+    opacity: 0.12;
+    transition: all .3s;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(at top center, #7CC4F3 0%, #00000E 71%);
+    z-index: -1;
+}
+.plans-section-header{
+    max-width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.plans-section-header .sub-heading{
+    font-size: 42px;
+    color: #A7A7A7;
+    font-family: "neue-haas-grotesk-medium";
+}
+.price-card{
+    background-image: url(../img/back-blue.png);
+    background-position: center center;
+    background-size: cover;
+    border-radius: 20px;
+    padding: 40px;
+    min-height: 650px;
+}
+.price-type{
+    color: white;
+    text-align: center;
+    font-size: 28px;
+    font-family: "neue-haas-grotesk-medium";
+    margin-bottom: 10px;
+}
+.price{
+    font-size: 60px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.installment-price{
+    font-size: 22px;
+    font-family: "ITC-Avant-Garde-Gothic-PRO-book";
+    color: white;
+    text-align: center;
+    display: block;
+}
+.includes{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-top: 40px;
+}
+.includes li{
+    margin-bottom: 10px;
+    color: white;
+    font-size: 17px;
+    font-family: "ITC-Avant-Garde-Gothic-PRO-book";
+}
+.includes li i{
+    margin-right: 5px;
+}
+.includes .not-included{
+    color: #A7A7A7;
+}
+.includes .not-included i{
+    color: #FF0000;
+}
+.price-card-2{
+    background-image: url(../img/Background.png);
+    background-position: center right;
+    background-size: cover;
+    border-style: solid;
+    border-width: 2px 2px 0px 0px;
+    border-color: #F8994F7D;
+}
+.price-card-2 .includes li i{
+    color: #F8994F;
+}
+.creator-img{
+    width: 100%;
+}
+.personal-message-container h4{
+    color: white;
+    font-size: 28px;
+    font-family: "neue-haas-grotesk-medium";
+}
+@media (min-width: 1400px) {
+    .plans-section .container {
+        max-width: 1140px;
+    }
+}
+@media (max-width: 991px) {
+    .price-card{
+        padding: 50px 30px;
+    }
+    .price-type{
+        font-size: 22px;
+    }
+    .price{
+        font-size: 44px;
+    }
+    .includes li{
+        font-size: 16px;
+    }
+    .plans-section-header{
+        max-width: 100%;
+    }
+    .plans-section-header .sub-heading{
+        font-size: 22px;
+    }
+}
+/* plans section end*/
+/* faq-section */
+.faq-section{
+    padding: 110px 0;
+    background: #00000E;
+    position: relative;
+    isolation: isolate;
+}
+.faq-section::before{
+    background: #00000E;
+    content: "";
+    display: block;
+    position: absolute;
+    opacity: 0.12;
+    transition: all .3s;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(at top center, #7CC4F3 0%, #00000E 71%);
+    z-index: -1;
+}
+.faq-header{
+    max-width: 75%;
+    margin: auto;
+}
+.faq-header .section-heading{
+    margin-top: 10px;
+}
+.faq-accordion{
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    border: none;
+}
+.faq-accordion .accordion-item{
+    border: none;
+    margin-bottom: 20px;
+    background: #FFFFFF0D;
+    border: 1px solid #FFFFFF36;
+    border-radius: 14px;
+}
+.faq-accordion .accordion-button:not(.collapsed){
+    background: transparent;
+    box-shadow: none;
+    color: white;
+}
+.faq-accordion .accordion-button{
+    background: transparent;
+    padding: 25px 30px;
+    box-shadow: none;
+    color: white;
+    font-family: "ITC-Avant-Garde-Gothic-PRO-medium";
+}
+.faq-accordion .accordion-button::after{
+    background-image: url(../img/plus-solid.svg);
+}
+.faq-accordion .accordion-button:not(.collapsed)::after{
+    background-image: url(../img/minus-solid.svg);
+    transform: rotate(0);
+}
+.faq-accordion .accordion-header{
+    background: transparent;
+}
+.faq-accordion .accordion-body{
+    font-family: "ITC-Avant-Garde-Gothic-PRO-book";
+    color: white;
+    padding: 14px 30px;
+}
+.app-container{
+    background-image: url(../img/App-background.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    padding: 20px 40px;
+    min-height: 500px;
+}
+.app-container .section-heading{
+    font-size: 58px;
+}
+.app-mockup{
+    width: 90%;
+}
+.store-links{
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+.store-links img{
+    height: 45px;
+}
+.comming-soon-btn{
+    background: #FFFFFF14;
+    border: 1px solid #FFFFFF12;
+    color: #FFFFFF7A;
+    padding: 18px 70px;
+    display: inline-block;
+    border-radius: 25rem;
+    text-align: center;
+    text-decoration: none;
+    font-family: "ITC-Avant-Garde-Gothic-PRO-book";
+    font-size: 18px;
+    transition: all .5s;
+    line-height: 1;
+}
+.comming-soon-btn:hover{
+    color: white;
+}
+.app-mockup{
+    transform: translateY(-10%);
+}
+@media (min-width: 1400px) {
+    .faq-section .container {
+        max-width: 1140px;
+    }
+}
+@media (max-width: 991px) {
+    .faq-accordion {
+        width: 100%;
+    }
+    .app-mockup{
+        transform: translateY(0);
+    }
+    .app-container{
+        background: url(../img/back-blue-2.png);
+        background-size: cover;
+        border-top: 1px solid #7CC4F370;
+        border-right: 1px solid #7CC4F370;
+        border-radius: 20px;
+    }
+    .app-container .section-heading{
+        font-size: 30px;
+    }
+}
+/* faq-section end*/
+/* footer section */
+footer{
+    background-color: #050C21;
+}
+.quick-links{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.quick-links ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    column-gap: 20px;
+}
+.quick-links img{
+    height: 70px;
+}
+.quick-links ul li a{
+    color: #FFFFFF8F;
+    text-decoration: none;
+    font-family: "ITC-Avant-Garde-Gothic-PRO-book";
+}
+.copyright{
+    border-top: 1px solid #FFFFFF12;
+    padding: 20px;
+    text-align: right;
+    color: #FFFFFF8F;
+}
+@media (min-width: 1400px) {
+    footer .container {
+        max-width: 1300px;
+    }
+}
+/* footer section end*/
